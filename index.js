@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 
-var logger = require('../libs/boilerLogger'),
-	shelljs = require('shelljs');
-
-var boilerPath = __dirname;
-var applicationPath = process.cwd();
+var logger = require('./libs/boilerLogger'),
+	shelljs = require('shelljs'),
+	boilerPath = __dirname,
+	applicationPath = process.cwd();
 
 logger.custom(["Boiler Path = ", "white"] , [boilerPath, "gray"]);
 logger.custom(["Application Path = ", "white"] , [applicationPath, "gray"]);

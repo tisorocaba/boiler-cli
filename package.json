@@ -1,16 +1,19 @@
 {
-  "name": "boiler-cli",
-  "description": "Boiler CLI",
-  "version": "0.0.1",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/baltazzar/boiler-cli"
-  },
-  "preferGlobal": "true",
-  "bin": {
-    "boiler-cli": "bin/boiler-cli.js"
-  },
-  "dependencies": {
+	"name": "boiler-cli",
+	"description": "Boiler CLI",
+	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/baltazzar/boiler-cli"
+	},
+	"preferGlobal": "true",
+	"bin": {
+		"boiler": "index.js"
+	},
+	"scripts": {
+		"preinstall": "npm install -g gulp volo"
+	},
+	"dependencies": {
 		"browser-sync"      : "^1.9.1",
 		"del"               : "^1.1.1",
 		"fs-extra"          : "^0.15.0",
@@ -30,5 +33,5 @@
 		"run-sequence"      : "^1.0.2",
 		"shelljs"           : "^0.4.0",
 		"webpack"           : "^1.5.3"
-  }
+	}
 }
