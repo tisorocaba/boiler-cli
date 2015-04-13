@@ -1,12 +1,11 @@
 #!/usr/bin/env node
 
-var logger = require('./libs/boilerLogger'),
-	shelljs = require('shelljs'),
+var shelljs = require('shelljs'),
+	Banner = require('./libs/banner'),
 	boilerPath = __dirname,
 	applicationPath = process.cwd();
 
-logger.custom(["Boiler Path = ", "white"] , [boilerPath, "gray"]);
-logger.custom(["Application Path = ", "white"] , [applicationPath, "gray"]);
+Banner(boilerPath, applicationPath, true);
 
-shelljs.cd(boilerPath);
-shelljs.exec("gulp " + process.argv[2] + " --appPath " + applicationPath);
+// shelljs.cd(boilerPath);
+// shelljs.exec("gulp " + process.argv[2] + " --appPath " + applicationPath);
