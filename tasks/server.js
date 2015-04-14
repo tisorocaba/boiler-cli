@@ -1,14 +1,18 @@
 var gulp = require('gulp'),
-	browsersync = require('browser-sync'),
-	path = require("path");
+	browsersync = require('browser-sync');
 
-module.exports = function(appPath) {
+module.exports = function(applicationPath) {
 	gulp.task('server', function() {
 		browsersync({
 			server: {
-				baseDir: appPath()
+				baseDir: applicationPath()
 			},
-			files: [appPath('temp/application.js'), appPath('assets/**'), appPath('config.json'), appPath('index.html')],
+			files: [
+				applicationPath('temp/application.js'),
+				applicationPath('assets/**'),
+				applicationPath('config.json'),
+				applicationPath('index.html')
+			],
 			notify: false,
 			ghostMode: false,
 			logPrefix: 'Boiler',
