@@ -11,8 +11,6 @@ var applicationPath = function(filePath) {
 	}
 };
 
-fs.readdirSync('tasks').forEach(function(task) {
-	if(task !== 'template-loader.js') {
-		require('./tasks/' + task)(applicationPath);
-	}
+fs.readdirSync('src/tasks/gulp').forEach(function(task) {
+	require('./src/tasks/gulp/' + task)(applicationPath);
 });

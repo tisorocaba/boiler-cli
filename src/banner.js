@@ -1,6 +1,6 @@
 var colors = require('colors'),
 	_ = require('underscore'),
-	tasks = require('./tasks.json'),
+	tasks = require('./task-list.json'),
 	pkg = require('../package.json');
 
 module.exports = function(boilerPath, applicationPath, showTasks) {

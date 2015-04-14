@@ -19,7 +19,7 @@ module.exports = function(applicationPath) {
 				applicationPath('libs'),
 				applicationPath('application'),
 				applicationPath('temp'),
-				path.resolve(__dirname, '../node_modules')
+				path.resolve(__dirname, '../../../node_modules')
 			],
 			alias: {
 				config: applicationPath('config.js')
@@ -27,7 +27,7 @@ module.exports = function(applicationPath) {
 		},
 		module: {
 			loaders: [
-				{ test: /\.tpl$/, loader: require.resolve('./template-loader.js') }
+				{ test: /\.tpl$/, loader: require.resolve('../boiler/template-loader.js') }
 			]
 		}
 	};

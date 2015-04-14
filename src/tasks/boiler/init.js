@@ -9,6 +9,7 @@ module.exports = function(applicationName) {
 			shelljs.exec("git clone https://github.com/baltazzar/boiler .", {silent: true});
 		}
 	} else {
+		console.log('git not found! Using volo instead.'.cyan);
 		if(applicationName) {
 			shelljs.exec("volo create " + applicationName + " baltazzar/boiler");
 		} else {
