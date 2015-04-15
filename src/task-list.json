@@ -2,7 +2,7 @@
 	"init": "          - Create a new project.",
 	"update": "        - Update the current project to the latest version of Boiler.",
 	"build": "         - Prepare the application for production.",
-	"clean": "         - Remove the folder 'dist/<version> (used by build).",
+	"clean": "         - Remove the folder 'dist/<version>' (used by build).",
 	"jshint": "        - Search for errors in the application (used by build).",
 	"server": "        - Start a web server for development (used by start).",
 	"start": "         - Start all the necessary tasks for development.",
