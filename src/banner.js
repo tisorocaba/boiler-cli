@@ -1,5 +1,6 @@
 var colors = require('colors'),
 	_ = require('underscore'),
+	checkVersion = require('./checkVersion'),
 	tasks = require('./task-list.json'),
 	pkg = require('../package.json');
 
@@ -16,6 +17,8 @@ module.exports = function(boilerPath, applicationPath, showTasks) {
 	].join('\n').gray;
 
 	console.log(banner);
+
+	checkVersion();
 
 	if(showTasks) {
 
