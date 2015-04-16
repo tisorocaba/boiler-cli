@@ -18,7 +18,7 @@ module.exports = function(boilerPath, applicationPath, showTasks) {
 
 	console.log(banner);
 
-	checkVersion();
+	// checkVersion(); // very slow on windows
 
 	if(showTasks) {
 
@@ -27,5 +27,7 @@ module.exports = function(boilerPath, applicationPath, showTasks) {
 		_(tasks).each(function(description, task) {
 			console.log(task.cyan, description.gray);
 		});
+
+		console.log('\n');
 	}
 }
