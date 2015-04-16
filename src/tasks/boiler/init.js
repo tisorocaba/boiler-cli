@@ -15,9 +15,9 @@ module.exports = function(applicationName) {
 	if(folderIsEmpty) {
 		if(shelljs.which('git')) {
 			if(applicationName) {
-				shelljs.exec("git clone https://github.com/baltazzar/boiler " + applicationName, {silent: true});
+				shelljs.exec("git clone --depth=1 https://github.com/baltazzar/boiler " + applicationName, {silent: true});
 			} else {
-				shelljs.exec("git clone https://github.com/baltazzar/boiler .", {silent: true});
+				shelljs.exec("git clone --depth=1 https://github.com/baltazzar/boiler .", {silent: true});
 			}
 		} else {
 			console.log('git not found! Using volo instead.'.cyan);
