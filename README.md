@@ -32,7 +32,9 @@ cd <app_name>
 boiler init
 ```
 
-**Observação**: `<app_name>` é o nome desejado para a pasta da aplicação.
+**Observações**
+
+1. `<app_name>` é o nome desejado para a pasta da aplicação.
 
 ### start
 
@@ -46,7 +48,11 @@ boiler start
 As tarefas necessárias para preparar a aplicação para desenvolvimento serão executadas e um servidor web será instanciado no endereço: `http://localhost:3000`.
 Ao realizar alterações no código-fonte da aplicação as tarefas de desenvolvimento serão executadas novamente e o browser será atualizado automaticamente!
 
-**Observação**: `<app_name>` é o nome desejado para a pasta da aplicação.
+**Observações**
+
+1. `<app_name>` é o nome desejado para a pasta da aplicação;
+
+2. Ao executar a task `start` em vários projetos ao mesmo tempo, a porta do servidor web incrementa `http://localhost:3001, http://localhost:3002, http://localhost:3003, etc`.
 
 ### build
 
@@ -59,4 +65,7 @@ boiler build
 
 As tarefas necessárias para preparar a aplicação para produção serão executadas e uma versão pronta para deploy será criada no caminho `<app_name>/dist/<app_version>`.
 
-**Observação**: `<app_name>` é o nome desejado para a pasta da aplicação e `<app_version>` é a versão informada no arquivo `package.json`.
+**Observações**
+
+1. `<app_name>` é o nome desejado para a pasta da aplicação;
+2. `<app_version>` é a versão informada no arquivo `package.json`.
