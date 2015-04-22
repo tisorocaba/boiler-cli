@@ -22,41 +22,41 @@ Deverá ser exibida a tela inicial do Boiler CLI com a versão e a lista de `tas
 Há duas maneiras de iniciar um projeto:
 
 ```bash
-boiler init app_name
+boiler init <app_name>
 ```
 
 ... ou:
 
 ```bash
-cd app_name
+cd <app_name>
 boiler init
 ```
 
-**Observação**: `app_name` é o nome desejado para a pasta da aplicação.
+**Observação**: `<app_name>` é o nome desejado para a pasta da aplicação.
 
 ### start
 
 Para preparar a aplicação para desenvolvimento, execute o seguinte comando:
 
 ```bash
-cd app_name
+cd <app_name>
 boiler start
 ```
 
 As tarefas necessárias para preparar a aplicação para desenvolvimento serão executadas e um servidor web será instanciado no endereço: `http://localhost:3000`.
 Ao realizar alterações no código-fonte da aplicação as tarefas de desenvolvimento serão executadas novamente e o browser será atualizado automaticamente!
 
-**Observação**: `app_name` é o nome desejado para a pasta da aplicação.
+**Observação**: `<app_name>` é o nome desejado para a pasta da aplicação.
 
 ### build
 
 Para preparar a aplicação para produção, execute o seguinte comando:
 
 ```bash
-cd app_name
+cd <app_name>
 boiler build
 ```
 
-As tarefas necessárias para preparar a aplicação para produção serão executadas e uma versão pronta para deploy será criada no caminho `app_name/dist/app_version`.
+As tarefas necessárias para preparar a aplicação para produção serão executadas e uma versão pronta para deploy será criada no caminho `<app_name>/dist/<app_version>`.
 
-**Observação**: `app_name` é o nome desejado para a pasta da aplicação e `app_version` é a versão informada no arquivo `package.json`.
+**Observação**: `<app_name>` é o nome desejado para a pasta da aplicação e `<app_version>` é a versão informada no arquivo `package.json`.
