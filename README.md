@@ -4,13 +4,13 @@
 ## Instalação
 
 ```bash
-npm install -g boiler-cli
+> npm install -g boiler-cli
 ```
 
 Após a instalação o comando `boiler` ficará disponível para uso! Execute o seguinte comando:
 
 ```bash
-boiler
+> boiler
 ```
 
 Deverá ser exibida a tela inicial do Boiler CLI com a versão e a lista de `tasks` disponíveis.
@@ -22,14 +22,14 @@ Deverá ser exibida a tela inicial do Boiler CLI com a versão e a lista de `tas
 Há duas maneiras de iniciar um projeto:
 
 ```bash
-boiler init <app_name>
+> boiler init <app_name>
 ```
 
 ... ou:
 
 ```bash
-cd <app_name>
-boiler init
+> cd <app_name>
+> boiler init
 ```
 
 **Observações**
@@ -41,8 +41,8 @@ boiler init
 Para preparar a aplicação para desenvolvimento, execute o seguinte comando:
 
 ```bash
-cd <app_name>
-boiler start
+> cd <app_name>
+> boiler start
 ```
 
 As tarefas necessárias para preparar a aplicação para desenvolvimento serão executadas e um servidor web será instanciado no endereço: `http://localhost:3000`.
@@ -59,8 +59,8 @@ Ao realizar alterações no código-fonte da aplicação as tarefas de desenvolv
 Para preparar a aplicação para produção, execute o seguinte comando:
 
 ```bash
-cd <app_name>
-boiler build
+> cd <app_name>
+> boiler build
 ```
 
 As tarefas necessárias para preparar a aplicação para produção serão executadas e uma versão pronta para deploy será criada no caminho `<app_name>/dist/<app_version>`.
