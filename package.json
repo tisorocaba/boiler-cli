@@ -1,7 +1,7 @@
 {
 	"name": "boiler-cli",
 	"description": "Boiler CLI",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/baltazzar/boiler-cli"
@@ -31,8 +31,10 @@
 		"jshint-stylish"    : "^1.0.0",
 		"minimist"          : "^1.1.1",
 		"node-notifier"     : "^4.1.2",
+		"request"           : "^2.55.0",
 		"run-sequence"      : "^1.0.2",
 		"shelljs"           : "^0.4.0",
+		"transfer-github"   : "^0.2.0",
 		"underscore"        : "^1.8.3",
 		"webpack"           : "^1.5.3"
 	}
