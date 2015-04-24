@@ -1,6 +1,5 @@
 var colors = require('colors'),
 	_ = require('underscore'),
-	checkVersion = require('./checkVersion'),
 	tasks = require('./task-list.json'),
 	pkg = require('../package.json');
 
