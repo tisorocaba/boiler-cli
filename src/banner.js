@@ -18,8 +18,6 @@ module.exports = function(boilerPath, applicationPath, showTasks) {
 
 	console.log(banner);
 
-	// checkVersion(); // very slow on windows
-
 	if(showTasks) {
 
 		console.log('TASKS'.white, '\n');
