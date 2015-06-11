@@ -19,9 +19,9 @@ if(task) {
 
 			if(task === 'start') {
 				Banner(boilerPath, applicationPath, false);
-				shelljs.exec("gulp --applicationPath=" + applicationPath);
+				shelljs.exec("gulp --color --applicationPath=" + applicationPath);
 			} else {
-				shelljs.exec("gulp " + task + " --applicationPath=" + applicationPath);
+				shelljs.exec("gulp " + task + " --color --applicationPath=" + applicationPath);
 			}
 		}
 	} else {
