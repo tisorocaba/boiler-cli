@@ -11,4 +11,4 @@ module.exports = function(applicationPath) {
 			.pipe(plugins.rename('application.min.css'))
 			.pipe(gulp.dest(applicationPath('dist/' + pkg.version + '/assets/css')));
 	});
-}
+};

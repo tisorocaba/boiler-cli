@@ -10,4 +10,4 @@ module.exports = function(applicationPath) {
 
 		fs.outputFileSync(applicationPath('temp/helpers.js'), helpers.join('\n'));
 	});
-}
+};

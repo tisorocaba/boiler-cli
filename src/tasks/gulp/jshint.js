@@ -8,4 +8,4 @@ module.exports = function(applicationPath) {
 			.pipe(plugins.jshint.reporter('jshint-stylish'))
 			.pipe(plugins.jshint.reporter('fail'));
 	});
-}
+};

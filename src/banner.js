@@ -27,4 +27,4 @@ module.exports = function(boilerPath, applicationPath, showTasks) {
 
 		console.log('\n');
 	}
-}
+};

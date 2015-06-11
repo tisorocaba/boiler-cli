@@ -8,4 +8,4 @@ module.exports = function(applicationPath) {
 	gulp.task('clean', function(cb) {
 		return del([applicationPath('dist/' + pkg.version)], {force: true}, cb);
 	});
-}
+};

@@ -30,4 +30,4 @@ module.exports = function() {
 			console.log('\napplication updated to boiler '.green + versionFetched.green + '!'.green);
 		}
 	});
-}
+};

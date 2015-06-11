@@ -36,4 +36,4 @@ module.exports = function(applicationName) {
 			console.log('\nthe current folder is not empty!'.red);
 		}
 	}
-}
+};

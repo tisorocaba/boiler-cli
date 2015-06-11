@@ -11,4 +11,4 @@ module.exports = function(applicationPath) {
 				.pipe(plugins.processhtml())
 				.pipe(gulp.dest(applicationPath('dist/' + pkg.version)));
 	});
-}
+};

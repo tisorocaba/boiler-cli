@@ -15,4 +15,4 @@ module.exports = function(applicationPath) {
 
 		fs.outputFileSync(applicationPath('temp/partials.js'), partials.join('\n'));
 	});
-}
+};

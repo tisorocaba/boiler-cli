@@ -5,4 +5,4 @@ module.exports = function(applicationPath) {
 		gulp.watch([applicationPath('application/helpers/**/*')], ['helpers']);
 		gulp.watch([applicationPath('application/templates/**/*')], ['partials']);
 	});
-}
+};

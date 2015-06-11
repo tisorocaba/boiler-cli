@@ -57,7 +57,7 @@ module.exports = function(applicationPath) {
 						title: 'Boiler error',
 						message: message
 					});
-				} catch(err) {}
+				} catch(e) {}
 			}
 
 			if(showLogs) {
@@ -101,4 +101,4 @@ module.exports = function(applicationPath) {
 			cb();
 		});
 	});
-}
+};
