@@ -12,7 +12,7 @@ module.exports = function() {
 
 	fetch(tempFolder, function(error, versionFetched) {
 		if(error) {
-			console.log('\nupdate failed! Try again later.'.red);
+			console.log('\nFalha na tarefa update! Tente novamente mais tarde.'.red);
 		} else {
 			shelljs.cd(tempFolder);
 
@@ -21,13 +21,13 @@ module.exports = function() {
 			shelljs.cp('-rf', ['assets/img/loader.gif'], path.join(applicationFolder, 'assets/img'));
 			shelljs.cp('-rf', ['libs/*'], path.join(applicationFolder, 'libs'));
 
-			console.log('\nassets/css/bootstrap.css'.cyan, 'updated!'.green);
-			console.log('assets/css/boiler.css'.cyan, '   updated!'.green);
-			console.log('assets/fonts/*'.cyan, '          updated!'.green);
-			console.log('assets/img/loader.gif'.cyan, '   updated!'.green);
-			console.log('libs/*'.cyan, '                  updated!'.green);
+			console.log('\nassets/css/bootstrap.css'.cyan, 'atualizado!'.green);
+			console.log('assets/css/boiler.css'.cyan, '   atualizado!'.green);
+			console.log('assets/fonts/*'.cyan, '          atualizado!'.green);
+			console.log('assets/img/loader.gif'.cyan, '   atualizado!'.green);
+			console.log('libs/*'.cyan, '                  atualizado!'.green);
 
-			console.log('\napplication updated to boiler '.green + versionFetched.green + '!'.green);
+			console.log('\nAplicação atualizada para o Boiler '.green + versionFetched.green + '!'.green);
 		}
 	});
 };

@@ -1,12 +1,12 @@
 {
-	"init": "          - Create a new project.",
-	"update": "        - Update the current project to the latest version of Boiler.",
-	"build": "         - Prepare the application for production.",
-	"clean": "         - Remove the folder \"dist/<version>\" (used by build).",
-	"jshint": "        - Search for errors in the application (used by build).",
-	"server": "        - Start a web server for development (used by start).",
-	"start": "         - Start all the necessary tasks for development.",
-	"watch": "         - Watch for changes in application (used by start).",
-	"webpack": "       - Precompile the application for development (used by start).",
-	"webpack-build": " - Precompile the application for production (used by build)."
+	"init": "          - Cria uma nova aplicação",
+	"update": "        - Atualiza a aplicação atual para a versão mais nova do Boiler",
+	"build": "         - Prepara a aplicação para produção",
+	"clean": "         - Remove a pasta \"dist/<version>\" (usado pela tarefa build)",
+	"jshint": "        - Procura erros na aplicação (usado pela tarefa build)",
+	"server": "        - Inicia um servidor web de testes para desenvolvimento (usado pela tarefa start)",
+	"start": "         - Inicia todas as tarefas necessárias para desenvolvimento",
+	"watch": "         - Observa as mudanças na aplicação (usado pela tarefa start)",
+	"webpack": "       - Precompila a aplicação para desenvolvimento (usado pela tarefa start)",
+	"webpack-build": " - Precompila a aplicação para produção (usado pela tarefa build)"
 }

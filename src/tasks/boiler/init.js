@@ -17,23 +17,23 @@ module.exports = function(applicationName) {
 	if(folderIsEmpty) {
 		fetch(applicationName || '.', function(error, versionFetched) {
 			if(error) {
-				console.log('\ninit failed! Try again later.'.red);
+				console.log('\nFalha na tarefa init! Tente novamente mais tarde.'.red);
 			} else {
 				shelljs.cd(applicationName || '.');
 				shelljs.rm('-rf', ['.gitignore', 'LICENSE', 'README.md', '.git']);
 
 				if(applicationName) {
-					console.log('\napplication '.green + applicationName.cyan + ' created!'.green);
+					console.log('\nAplicação '.green + applicationName.cyan + ' criada!'.green);
 				} else {
-					console.log('\napplication created!'.green);
+					console.log('\nAplicação criada!'.green);
 				}
 			}
 		});
 	} else {
 		if(applicationName) {
-			console.log('\nthe folder '.red + applicationName.cyan + ' is not empty!'.red);
+			console.log('\nA pasta '.red + applicationName.cyan + ' não está vazia!'.red);
 		} else {
-			console.log('\nthe current folder is not empty!'.red);
+			console.log('\nA pasta atual não está vazia!'.red);
 		}
 	}
 };

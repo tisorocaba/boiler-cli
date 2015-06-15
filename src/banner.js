@@ -10,8 +10,8 @@ module.exports = function(boilerPath, applicationPath, showTasks) {
 		'| _ \\ | (_) |  | |  | |__  | _|  |   /',
 		'|___/  \\___/  |___| |____| |___| |_|_\\ ' + pkg.version.green,
 		'',
-		'Boiler Path      = '.gray + boilerPath.cyan,
-		'Application Path = '.gray + applicationPath.cyan,
+		'Caminho do Boiler    = '.gray + boilerPath.cyan,
+		'Caminho da Aplicação = '.gray + applicationPath.cyan,
 		''
 	].join('\n').gray;
 
@@ -19,7 +19,7 @@ module.exports = function(boilerPath, applicationPath, showTasks) {
 
 	if(showTasks) {
 
-		console.log('TASKS'.white, '\n');
+		console.log('TAREFAS'.white, '\n');
 
 		_(tasks).each(function(description, task) {
 			console.log(task.cyan, description.gray);

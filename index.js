@@ -25,7 +25,7 @@ if(task) {
 			}
 		}
 	} else {
-		console.log('\ntask not found!'.red);
+		console.log('\nTarefa não encontrada!'.red);
 	}
 } else {
 	Banner(boilerPath, applicationPath, true);
