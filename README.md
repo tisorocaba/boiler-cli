@@ -1,4 +1,4 @@
-# Boiler CLI [![Dependency Status](https://gemnasium.com/baltazzar/boiler-cli.svg)](https://gemnasium.com/baltazzar/boiler-cli)
+# Boiler CLI ![Version](https://img.shields.io/github/release/baltazzar/boiler-cli.svg) [![Dependency Status](https://gemnasium.com/baltazzar/boiler-cli.svg)](https://gemnasium.com/baltazzar/boiler-cli)
 > Ferramenta para desenvolvimento de projetos front-end
 
 ## Instalação
