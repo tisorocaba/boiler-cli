@@ -1,3 +1,5 @@
+[![Dependency Status](https://gemnasium.com/baltazzar/boiler-cli.svg)](https://gemnasium.com/baltazzar/boiler-cli)
+
 # Boiler CLI
 > Ferramenta para desenvolvimento de projetos front-end
 
