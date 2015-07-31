@@ -11,7 +11,7 @@
 		"boiler": "index.js"
 	},
 	"scripts": {
-		"preinstall": "npm install -g gulp volo"
+		"preinstall": "./install/preinstall.js"
 	},
 	"dependencies": {
 		"browser-sync"      : "^2.7.9",
