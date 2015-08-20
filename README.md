@@ -1,3 +1,5 @@
+<img height="70" align="right" src="https://raw.githubusercontent.com/baltazzar/boiler-cli/master/logo.png"> 
+
 # Boiler CLI
 > Ferramenta para desenvolvimento de projetos front-end
 
