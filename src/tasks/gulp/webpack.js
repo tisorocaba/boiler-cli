@@ -19,6 +19,7 @@ module.exports = function(applicationPath) {
 				applicationPath('libs'),
 				applicationPath('application'),
 				applicationPath('temp'),
+				'node_modules',
 				path.resolve(__dirname, '../../../node_modules')
 			],
 			alias: {
@@ -31,6 +32,15 @@ module.exports = function(applicationPath) {
 			]
 		}
 	};
+
+	if(pkg.es6 && pkg.es6 !== false) {
+		webpackConfig.module.loaders.push({
+			test: /\.js$/,
+			exclude: /(node_modules|libs|temp)/,
+			loader: require.resolve('../../../node_modules/babel-loader'),
+			query: pkg.es6
+		});
+	}
 
 	var webpackCallback = function(err, stats, showLogs) {
 		if(err) {
