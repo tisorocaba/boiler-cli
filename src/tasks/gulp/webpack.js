@@ -26,9 +26,12 @@ module.exports = function(applicationPath) {
 				config: applicationPath('config.js')
 			}
 		},
+		resolveLoader: {
+			root: path.resolve(__dirname, '../../../node_modules')
+		},
 		module: {
 			loaders: [
-				{ test: /\.tpl$/, loader: require.resolve('../boiler/template-loader.js') }
+				{ test: /\.tpl$/, loader: 'webpack-template-loader'}
 			]
 		}
 	};
@@ -37,7 +40,7 @@ module.exports = function(applicationPath) {
 		webpackConfig.module.loaders.push({
 			test: /\.js$/,
 			exclude: /(node_modules|libs|temp)/,
-			loader: require.resolve('../../../node_modules/babel-loader'),
+			loader: 'babel-loader',
 			query: pkg.es6
 		});
 	}
