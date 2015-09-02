@@ -1,30 +1,32 @@
-var colors = require('colors'),
-	_ = require('underscore'),
-	tasks = require('./task-list.json'),
-	pkg = require('../package.json');
-
-module.exports = function(boilerPath, applicationPath, showTasks) {
-	var banner = [
+var chalk = require('chalk'),
+	pkg = require('../package.json'),
+	taskList = require('./taskList'),
+	banner = chalk.green([
 		' ___    ___    ___   _      ___   ___ ',
 		'| _ )  / _ \\  |_ _| | |    | __| | _ \\',
 		'| _ \\ | (_) |  | |  | |__  | _|  |   /',
-		'|___/  \\___/  |___| |____| |___| |_|_\\ ' + pkg.version.green,
-		'',
-		'Caminho do Boiler    = '.gray + boilerPath.cyan,
-		'Caminho da Aplicação = '.gray + applicationPath.cyan,
+		'|___/  \\___/  |___| |____| |___| |_|_\\ ' + chalk.green(pkg.version),
 		''
-	].join('\n').gray;
+	].join('\n'));
 
-	console.log(banner);
+module.exports = {
+	show: function() {
+		console.log(banner);
+		return this;
+	},
 
-	if(showTasks) {
+	showPath: function() {
+		console.log(chalk.gray('Application path: ') + chalk.cyan(process.cwd()), '\n');
+		return this;
+	},
 
-		console.log('TAREFAS'.white, '\n');
+	showTaskList: function() {
+		console.log(chalk.white('TASKS'), '\n');
 
-		_(tasks).each(function(description, task) {
-			console.log(task.cyan, description.gray);
-		});
+		for(task in taskList) {
+			console.log(chalk.cyan(task), '\t', chalk.gray(taskList[task]));
+		}
 
-		console.log('\n');
+		return this;
 	}
 };
