@@ -1,6 +1,6 @@
 var fs = require('fs'),
 	chalk = require('chalk'),
-	fetch = require('../fetch'),
+	Github = require('../github'),
 	applicationPath = process.argv.slice(2)[1] || '.';
 
 module.exports = function() {
@@ -13,7 +13,7 @@ module.exports = function() {
 	}
 
 	if(isEmpty) {
-		fetch(applicationPath, function(error, versionFetched) {
+		Github.fetch(applicationPath, function(error, versionFetched) {
 			if(error) {
 				console.log('\n', chalk.red(error));
 			} else {
