@@ -18,10 +18,18 @@
 	},
 	"homepage": "https://github.com/baltazzar/boiler-cli#readme",
 	"dependencies": {
-		"chalk"          : "^1.1.1",
-		"decompress-zip" : "^0.2.0",
-		"fs-extra"       : "^0.24.0",
-		"gulp"           : "^3.9.0",
-		"request"        : "^2.61.0"
+		"browser-sync"            : "^2.9.3",
+		"chalk"                   : "^1.1.1",
+		"decompress-zip"          : "^0.2.0",
+		"fs-extra"                : "^0.24.0",
+		"glob"                    : "^5.0.14",
+		"gulp"                    : "^3.9.0",
+		"gulp-load-plugins"       : "^0.10.0",
+		"handlebars"              : "^3.0.3",
+		"node-notifier"           : "^4.2.3",
+		"request"                 : "^2.61.0",
+		"run-sequence"            : "^1.1.2",
+		"webpack"                 : "^1.12.1",
+		"webpack-template-loader" : "^1.0.0"
 	}
 }
