@@ -1,4 +1,4 @@
-<img height="70" align="right" src="https://raw.githubusercontent.com/baltazzar/boiler-cli/master/logo.png"> 
+<img height="70" align="right" src="https://raw.githubusercontent.com/baltazzar/boiler-cli/master/logo.png">
 
 # Boiler CLI
 > Ferramenta para desenvolvimento de projetos front-end
@@ -71,19 +71,3 @@ As tarefas necessárias para preparar a aplicação para produção serão execu
 
 1. `<app_name>` é o nome desejado para a pasta da aplicação;
 2. `<app_version>` é a versão informada no arquivo `package.json`.
-
-## Suporte a es6
-
-Para habilitar o suporte a es6, coloque o seguinte trecho no `package.json` da sua aplicação:
-
-```json
-"es6": {
-	"blacklist": ["strict"],
-	"optional": ["runtime"]
-}
-```
-
-**Observações**
-
-1. Todas as opções inseridas no objeto `"es6"` serão passadas como opções para o `babel-loader`;
-2. Para desabilitar o suporte é só apagar o objeto `"es6"` ou alterar para `"es6": false`.

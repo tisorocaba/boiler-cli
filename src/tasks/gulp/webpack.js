@@ -36,15 +36,6 @@ module.exports = function(applicationPath) {
 		}
 	};
 
-	if(pkg.es6 && pkg.es6 !== false) {
-		webpackConfig.module.loaders.push({
-			test: /\.js$/,
-			exclude: /(node_modules|libs|temp)/,
-			loader: 'babel-loader',
-			query: pkg.es6
-		});
-	}
-
 	var webpackCallback = function(err, stats, showLogs) {
 		if(err) {
 			throw new plugins.util.PluginError('[webpack]', err);
