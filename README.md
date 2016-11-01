@@ -1,4 +1,4 @@
-<img height="70" align="right" src="https://raw.githubusercontent.com/baltazzar/boiler-cli/master/logo.png">
+# DEPRECATED - use [Front-CLI](https://front-cli.github.io) instead!
 
 # Boiler CLI
 > Ferramenta para desenvolvimento de projetos front-end
