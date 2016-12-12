@@ -10,9 +10,6 @@
 	"bin": {
 		"boiler": "index.js"
 	},
-	"scripts": {
-		"preinstall": "npm install -g gulp volo"
-	},
 	"dependencies": {
 		"browser-sync"            : "^2.7.9",
 		"colors"                  : "^1.1.0",
