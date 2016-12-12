@@ -6,7 +6,7 @@
 ## Instalação
 
 ```bash
-> npm install -g baltazzar/boiler-cli
+> npm install -g gulp volo baltazzar/boiler-cli
 ```
 
 Após a instalação o comando `boiler` ficará disponível para uso! Execute o seguinte comando:
